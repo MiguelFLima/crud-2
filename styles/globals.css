@@ -1,26 +1,18 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
-}
+@layer components {
+    .navBtn {
+        @apply text-xs sm:text-base md:text-xl  hover:border-b hover:border-black text-gray-700 hover:text-black active:scale-95 transition duration-100 
+    }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+    .inputNovoCadastro {
+        @apply bg-transparent border-b placeholder:text-gray-400 placeholder:text-lg outline-none pl-2
+    }
+
+    .btnNovoCadastro {
+        @apply bg-blue-700 rounded-xl text-white w-[270px] sm:w-[320px] md:w-[100%] h-[60px] text-xl tracking-widest hover:bg-blue-800 active:scale-95 transition duration-150
+    }
 }
