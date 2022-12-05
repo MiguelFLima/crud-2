@@ -1,3 +1,4 @@
-Simple project with next and tailwind to train CRUD saving data on localstorage.
+Simple project to train CRUD saving data on localstorage.
 
-only adding and removing features available, soon will provide editing
+* Next.js
+* TailwindCSS
